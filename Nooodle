@@ -1063,7 +1063,7 @@ ccont.appendChild(pluginPanel);
 //keyword: should
 
 var pbar = document.createElement("div");
-pbar.innerHTML = "<span style='font-size: 150%'>Nooodle</span> "+pdl.version+"<br/><span style='font-size: 75%'>by InterGypsi</span>";
+pbar.innerHTML = "<span style='font-size: 150%'>Nooodle</span> "+pdl.version+"<br/><span style='font-size: 75%'>by InterGypsi & 1r5</span>";
 pbar.style.textAlign = "center";
 pbar.style.position = "fixed";
 pbar.style.right = "0px";
