@@ -1070,7 +1070,7 @@ pbar.style.right = "0px";
 pbar.style.bottom = "0px";
 pbar.style.zIndex = "100000";
 
-$.get("https://raw.githubusercontent.com/haicat/Pooodle/master/version.log", function( cversion ) {
+$.get("https://github.com/InterGypsi/Nooodle/blob/master/Nooodle", function( cversion ) {
     if (Number(cversion) > pdl.version){terminal.write("Update available! Newest version: "+cversion);pbar.innerHTML += ("<div style='border-radius:8px;padding:4px;background-color: #dd4444'><a href='https://raw.githubusercontent.com/haicat/Pooodle/master/pooodle.user.js'>Update available!</a></br>Latest version: "+cversion+"</div>");};
 });
 
