@@ -1,32 +1,30 @@
 // ==UserScript==
-// @name        Nooodle
+// @name        Nooodle :>
 // @author      InterGypsi
 // @namespace   http://doodleordie.com/profile/haicat
 // @downloadURL https://raw.githubusercontent.com/InterGypsi/Nooodle/master/Nooodle.user.js
 // @description Extended drooodle functionality!
-// @include     http://www.drooodle.com/drdl
-// @include     http://www.drooodle.com/d/*/comment
+// @include     https://www.drooodle.com/drdl
+// @include     https://www.drooodle.com/d/*/comment
 // @version     14
 // @grant       none
 // ==/UserScript==
 
 /***
- ________  ________  ________  ________  ________  ___       _______ 
-|\   __  \|\   __  \|\   __  \|\   __  \|\   ___ \|\  \     |\  ____\     
-\ \  \|\  \ \  \|\  \ \  \|\  \ \  \|\  \ \  \_|\ \ \  \    \ \  \___
- \ \   ____\ \  \\\  \ \  \\\  \ \  \\\  \ \  \ \\ \ \  \    \ \   __\  
-  \ \  \___|\ \  \\\  \ \  \\\  \ \  \\\  \ \  \_\\ \ \  \____\ \  \_|___ 
-   \ \__\    \ \_______\ \_______\ \_______\ \_______\ \_______\ \_______\
-    \|__|     \|_______|\|_______|\|_______|\|_______|\|_______|\|_______|
+ ________   ________  ________  ________  ________  ___       _______
+|\   ___  \|\   __  \|\   __  \|\   __  \|\   ___ \|\  \     |\  ___ \
+\ \  \\ \  \ \  \|\  \ \  \|\  \ \  \|\  \ \  \_|\ \ \  \    \ \   __/|
+ \ \  \\ \  \ \  \\\  \ \  \\\  \ \  \\\  \ \  \ \\ \ \  \    \ \  \_|/__
+  \ \  \\ \  \ \  \\\  \ \  \\\  \ \  \\\  \ \  \_\\ \ \  \____\ \  \_|\ \
+   \ \__\\ \__\ \_______\ \_______\ \_______\ \_______\ \_______\ \_______\
+    \|__| \|__|\|_______|\|_______|\|_______|\|_______|\|_______|\|_______|
 
 Pooodle
-by haicat
+by InterGypsi
 
-https://github.com/haicat
-https://github.com/haicat/Pooodle
+https://github.com/InterGypsi
+https://github.com/InterGypsi/Nooodle
 
-http://doodleordie.com/profile/haicat
-https://haicat.deviantart.com/
 
 For use on http://www.drooodle.com
 
@@ -973,7 +971,7 @@ $("#cpicker").spectrum({
     }
     ,
     palette: [
-        ["#ff931e", "#d6ce24", "#7bb4d9", "#e6e182", "#662d91", "#fff460", "#000000", "#ff1d25", "#ff7bac", "#7ac943", "#f4e7c9", "#863F08", "#ffffff", "#bdccd4", "#3fa9f5"]
+        ["#ffffff", "#bdccd4", "#DFDFDF", "#FFDFBD", "#f4e7c9", "#ff7bac", "#FF6BBB", "#662d91", "#D081FF", "#3fa9f5", "#7ac943", "#72FF8A", "#fff460", "#FFF763", "#ff931e", "#FA8F53", "#ff1d25", "#DC363A", "#863f08", "#682705", "#000000"]
     ]
 });
 
@@ -1063,14 +1061,14 @@ ccont.appendChild(pluginPanel);
 //keyword: should
 
 var pbar = document.createElement("div");
-pbar.innerHTML = "<span style='font-size: 150%'>Nooodle</span> "+pdl.version+"<br/><span style='font-size: 75%'>by InterGypsi & 1r5</span>";
+pbar.innerHTML = "<span style='font-size: 150%'>Nooodle</span> "+pdl.version+"<br/><span style='font-size: 75%'>by InterGypsi</span>";
 pbar.style.textAlign = "center";
 pbar.style.position = "fixed";
 pbar.style.right = "0px";
 pbar.style.bottom = "0px";
 pbar.style.zIndex = "100000";
 
-$.get("https://github.com/InterGypsi/Nooodle/blob/master/Nooodle", function( cversion ) {
+$.get("https://raw.githubusercontent.com/haicat/Pooodle/master/version.log", function( cversion ) {
     if (Number(cversion) > pdl.version){terminal.write("Update available! Newest version: "+cversion);pbar.innerHTML += ("<div style='border-radius:8px;padding:4px;background-color: #dd4444'><a href='https://raw.githubusercontent.com/haicat/Pooodle/master/pooodle.user.js'>Update available!</a></br>Latest version: "+cversion+"</div>");};
 });
 
